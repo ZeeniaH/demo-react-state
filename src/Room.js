@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import './Room.css';
 
 function Room() {
     //const state = useState (true);    
@@ -27,7 +28,8 @@ function Room() {
 
     return ( 
     
-    <div>This room is : {isLit? "lit" : "dark"} 
+    <div className={`room ${isLit ? "lit" : "dark"}`}>
+    This room is : {isLit? "lit" : "dark"} 
     <br/>
     Age : {age}
     <br/>
